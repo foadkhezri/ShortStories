@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/txtMoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moonTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"/>
+        <RelativeLayout
+            app:layout_constraintTop_toBottomOf="@id/txtMoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="32dp"
+            android:paddingTop="32dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+            <TextView
+                android:text="@string/HowTheMoonBecameBeautiful11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:gravity="center"
+                android:id="@+id/txtMoonStory1"/>
+
+            <ImageView
+                android:id="@+id/moonImg1"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/txtMoonStory1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:text="@string/HowTheMoonBecameBeautiful12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:paddingStart="16dp"
+                android:layout_below="@id/moonImg1"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:id="@+id/txtMoonStory2"/>
+
+            <ImageView
+                android:id="@+id/moonImg2"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/txtMoonStory2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:text="@string/moonAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:paddingStart="18dp"
+                android:layout_below="@id/moonImg2"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="24dp"
+                android:gravity="start"
+                android:id="@+id/moon_author"/>
+        </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

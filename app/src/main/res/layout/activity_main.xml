@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="com.example.foad.shortstories.MainActivity">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stories"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:id="@+id/txtStories"/>
+
+        <ListView
+            android:textColor="@color/black"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24sp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/storyListView">
+        </ListView>
+
+</LinearLayout>
